@@ -1,0 +1,38 @@
+body, html {
+    
+}
+
+.game {
+    border-collapse: collapse;    
+    padding: 0px;  
+    height: 600px;
+    width: 600px;     
+}
+
+
+colgroup { 
+    border: solid medium;     
+}
+
+.game-cell {
+    border: 1px solid black;
+    /* width: 11.111%;      */
+}
+
+.game-cell  input {
+    display:inline-block;
+    height: 100%;  
+    width: 85%;    
+    text-align: center;
+    font-size: 30px;
+    outline: none;
+    border: 0px solid;
+}
+
+tr:nth-child(3n) td {
+    border-bottom:solid ;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}

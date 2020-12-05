@@ -1,0 +1,140 @@
+.hidden {
+    display:none;
+}
+
+body, html {
+    background-color: rgb(24,24,24);
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+}
+
+header {    
+    display: grid;        
+    grid-template-columns: 1fr 1fr 1fr;  
+    grid-template-rows: 100px 100px 100px;   
+    grid-template-areas: 'tl tm tr'
+                         'ml mm mr'
+                         'll lm lr'; 
+    position: relative;     
+}
+
+
+#heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    text-align: center;
+    grid-area: tm;
+    font-size: 35px;
+
+    color: rgb(24,24,24);
+    text-shadow: 0px 0px 2px white;
+
+}
+
+#heading:hover {
+    color: white;
+    text-shadow: 0px 0px 12px rgb(142, 251, 255);
+}
+
+
+#setup-game {  
+    text-align: center; 
+    grid-area: mm;     
+    width: 600px;
+    border: 1px solid silver;
+    border-radius:50px;
+    background-color: transparent;
+    box-shadow: 0px 0px 8px rgb(142, 251, 255);
+}
+
+#setup-game:hover {
+    color: white;
+    border-color: white;
+    box-shadow: 0px 0px 12px rgb(93, 250, 255)
+}
+
+
+#diff {
+    margin-bottom: 30px;
+}
+
+
+#game-start {
+    padding-top: 20px;
+    grid-area: lm;
+    display: flex;
+    justify-content: center; 
+    height: 50px;    
+}
+
+
+#start-btn {
+    color: silver;    
+    background-color: transparent;
+    border: 1px solid silver;
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 0px 0px 8px rgb(142, 251, 255);
+}
+
+#start-btn:hover {
+    color: white;
+    border-color: white;
+    box-shadow: 0px 0px 12px rgb(93, 250, 255);
+}
+
+#start-btn:active {
+    color: silver;
+    border-color: silver;
+    box-shadow: 0px 0px 8px rgb(162, 252, 255);
+    
+}
+#start-btn:focus {
+    outline: 0;
+}
+
+#board {
+    padding-top: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    height: 600px;
+    width: 600px;
+}
+
+.cell {
+    border: 1px solid white;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin: 0px;
+    vertical-align: middle;
+    font-size: 40pt;
+}
+
+p.selected {
+    background-color: lightblue;
+}
+
+p.incorrect {
+    color: lightcoral;
+}
+
+.rightBorder {
+    border-right: 4px solid white;
+}
+
+.bottomBorder {
+    border-bottom: 4px solid white;
+}
+
+footer {
+    text-align:center;
+    color: silver;
+    font-size: 10px;
+}
